@@ -1,7 +1,7 @@
 import urllib2
 from zope.interface import implements
 
-from plone.portlets.interfavwc import IPortletDataProvider
+from plone.portlets.interfaces import IPortletDataProvider
 from plone.app.portlets.portlets import base
 from Products.CMFCore.utils import getToolByName
 
@@ -9,9 +9,8 @@ from zope import schema
 from zope.formlib import form
 
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-from Products.CMFPlone.utils import safe_unicode
 
-from vwc.blog.utils import find_assignment_context
+from vwc.blog.utils import find_portlet_assignment_context
 from vwc.blog.blogentry import IBlogEntry
 from vwc.blog import MessageFactory as _
 
@@ -69,7 +68,10 @@ class Renderer(base.Renderer):
 
     def archive_url(self, subject):
         # Get the path of where the portlet is created. That's the blog.
-        assignment_context = find_assignment_context(self.data, self.context)
+        assignment_context = find_portlet_assignment_context(self.data,
+                                                             self.context)
+        if assignment_context is None:
+            assignment_context = self.context
         self.folder_url = assignment_context.absolute_url()
         sub = urllib2.quote(subject.encode('utf-8'))
         url = '%s/%s?category=%s' % (self.folder_url,
@@ -78,7 +80,8 @@ class Renderer(base.Renderer):
         return url
 
     def blog_url(self):
-        assignment_context = find_assignment_context(self.data, self.context)
+        assignment_context = find_portlet_assignment_context(self.data,
+                                                             self.context)
         return assignment_context.absolute_url()
 
     def count_entries(self, subject):
