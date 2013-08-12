@@ -3,10 +3,10 @@ from plone import api
 
 from plone.dexterity.content import Item
 from plone.directives import form
-from plone.namedfile.interfavwc import IImageScaleTraversable
+from plone.namedfile.interfaces import IImageScaleTraversable
 
 from plone.app.textfield import RichText
-from plone.app.contentlisting.interfavwc import IContentListing
+from plone.app.contentlisting.interfaces import IContentListing
 
 
 from vwc.blog.blogentry import IBlogEntry
