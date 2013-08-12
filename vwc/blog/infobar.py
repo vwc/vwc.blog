@@ -1,7 +1,7 @@
 from five import grok
 from zope.interface import Interface
 from zope.component import getMultiAdapter
-from plone.app.layout.viewlets.interfavwc import IPortalFooter
+from plone.app.layout.viewlets.interfaces import IPortalFooter
 
 
 class InfoBarViewlet(grok.Viewlet):
