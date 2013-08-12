@@ -19,7 +19,7 @@
   <property name="klass">vwc.blog.landingpage.LandingPage</property>
 
   <property name="behaviors">
-     <element value="plone.app.content.interfavwc.INameFromTitle" />
+     <element value="plone.app.content.interfaces.INameFromTitle" />
      <element value="plone.app.dexterity.behaviors.metadata.IBasic"/>
    </property>
 

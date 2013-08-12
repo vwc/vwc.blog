@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-07-25 15:46+0000\n"
+"POT-Creation-Date: 2013-08-12 12:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,25 +17,9 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: vwc.blog\n"
 
-#: ./../profiles/default/types/vwc.blog.blog.xml
-msgid "A fcontainer for blog entries"
-msgstr ""
-
-#: ./../profiles/default/types/vwc.blog.landingpage.xml
-msgid "A frontpage type"
-msgstr ""
-
-#: ./../profiles/default/types/vwc.blog.blogentry.xml
-msgid "A single blogentry that can contain images"
-msgstr ""
-
-#: ./../portlets/archive.py:39
-#: ./../portlets/categories.py:27
+#: ./../portlets/archive.py:40
+#: ./../portlets/categories.py:26
 msgid "Archive view"
-msgstr ""
-
-#: ./../profiles/default/types/vwc.blog.blog.xml
-msgid "Blog"
 msgstr ""
 
 #: ./../portlets/archive.pt:7
@@ -46,29 +30,21 @@ msgstr ""
 msgid "Blog Entry"
 msgstr ""
 
-#: ./../portlets/archive.py:65
+#: ./../portlets/archive.py:66
 msgid "Blog Monthly archive"
 msgstr ""
 
-#: ./../profiles/default/types/vwc.blog.blogentry.xml
-msgid "BlogEntry"
-msgstr ""
-
-#: ./../landingpage.py:24
+#: ./../landingpage.py:22
 msgid "Body Text"
 msgstr ""
 
 #: ./../portlets/categories.pt:7
-#: ./../portlets/categories.py:51
+#: ./../portlets/categories.py:50
 msgid "Categories"
 msgstr ""
 
 #: ./../portlets/blogrecent.py:24
 msgid "Entries"
-msgstr ""
-
-#: ./../profiles/default/types/vwc.blog.landingpage.xml
-msgid "LandingPage"
 msgstr ""
 
 #: ./../portlets/blogrecent.py:48
@@ -83,8 +59,8 @@ msgstr ""
 msgid "Please enter main body text for this blog entry"
 msgstr ""
 
-#: ./../portlets/archive.py:40
-#: ./../portlets/categories.py:28
+#: ./../portlets/archive.py:41
+#: ./../portlets/categories.py:27
 msgid "The name of the archive view"
 msgstr ""
 
@@ -92,51 +68,51 @@ msgstr ""
 msgid "The number of entries to show"
 msgstr ""
 
-#: ./../portlets/archive.py:16
+#: ./../portlets/archive.py:17
 msgid "month_1"
 msgstr ""
 
-#: ./../portlets/archive.py:25
+#: ./../portlets/archive.py:26
 msgid "month_10"
 msgstr ""
 
-#: ./../portlets/archive.py:26
+#: ./../portlets/archive.py:27
 msgid "month_11"
 msgstr ""
 
-#: ./../portlets/archive.py:27
+#: ./../portlets/archive.py:28
 msgid "month_12"
 msgstr ""
 
-#: ./../portlets/archive.py:17
+#: ./../portlets/archive.py:18
 msgid "month_2"
 msgstr ""
 
-#: ./../portlets/archive.py:18
+#: ./../portlets/archive.py:19
 msgid "month_3"
 msgstr ""
 
-#: ./../portlets/archive.py:19
+#: ./../portlets/archive.py:20
 msgid "month_4"
 msgstr ""
 
-#: ./../portlets/archive.py:20
+#: ./../portlets/archive.py:21
 msgid "month_5"
 msgstr ""
 
-#: ./../portlets/archive.py:21
+#: ./../portlets/archive.py:22
 msgid "month_6"
 msgstr ""
 
-#: ./../portlets/archive.py:22
+#: ./../portlets/archive.py:23
 msgid "month_7"
 msgstr ""
 
-#: ./../portlets/archive.py:23
+#: ./../portlets/archive.py:24
 msgid "month_8"
 msgstr ""
 
-#: ./../portlets/archive.py:24
+#: ./../portlets/archive.py:25
 msgid "month_9"
 msgstr ""
 

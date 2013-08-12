@@ -22,10 +22,10 @@
        in Plone -->
   <genericsetup:registerProfile
       name="default"
-      title="Blogging facilities for faust site"
+      title="Blogging facilities for Plone sites"
       directory="profiles/default"
-      description="Extension profile for Blogging facilities for faust site"
-      provides="Products.GenericSetup.interfavwc.EXTENSION"
+      description="Extension profile for VWC Blogging facilities"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
   <!-- -*- extra stuff goes here -*- -->
