@@ -7,11 +7,11 @@ from plone import api
 from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone.PloneBatch import Batch
 
-from plone.app.discussion.interfavwc import IConversation
-from plone.app.contentlisting.interfavwc import IContentListing
+from plone.app.discussion.interfaces import IConversation
+from plone.app.contentlisting.interfaces import IContentListing
 
-from plone.app.layout.navigation.interfavwc import INavigationRoot
-from Products.CMFCore.interfavwc import IFolderish
+from plone.app.layout.navigation.interfaces import INavigationRoot
+from Products.CMFCore.interfaces import IFolderish
 
 from vwc.blog.blogentry import IBlogEntry
 

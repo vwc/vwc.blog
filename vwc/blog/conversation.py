@@ -2,8 +2,8 @@ from zope.component import queryUtility
 from Acquisition import aq_inner
 from Products.CMFCore.utils import getToolByName
 
-from plone.registry.interfavwc import IRegistry
-from plone.app.discussion.interfavwc import IDiscussionSettings
+from plone.registry.interfaces import IRegistry
+from plone.app.discussion.interfaces import IDiscussionSettings
 
 
 class ConversationView(object):

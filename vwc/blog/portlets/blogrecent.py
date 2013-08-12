@@ -1,6 +1,6 @@
 from zope.interface import implements
 
-from plone.portlets.interfavwc import IPortletDataProvider
+from plone.portlets.interfaces import IPortletDataProvider
 from plone.app.portlets.portlets import base
 from Products.CMFCore.utils import getToolByName
 

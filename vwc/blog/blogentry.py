@@ -3,11 +3,11 @@ from plone.directives import dexterity, form
 from zope import schema
 from plone.indexer import indexer
 
-from plone.namedfile.interfavwc import IImageScaleTraversable
+from plone.namedfile.interfaces import IImageScaleTraversable
 
 from plone.app.textfield import RichText
 try:
-    from plone.app.discussion.interfavwc import IConversation
+    from plone.app.discussion.interfaces import IConversation
     USE_PAD = True
 except ImportError:
     USE_PAD = False

@@ -7,12 +7,12 @@ from plone.directives import dexterity, form
 from Products.CMFPlone.PloneBatch import Batch
 from Products.CMFCore.utils import getToolByName
 try:
-    from plone.app.discussion.interfavwc import IConversation
+    from plone.app.discussion.interfaces import IConversation
     USE_PAD = True
 except ImportError:
     USE_PAD = False
 
-from plone.app.contentlisting.interfavwc import IContentListing
+from plone.app.contentlisting.interfaces import IContentListing
 from vwc.blog.blogentry import IBlogEntry
 
 
