@@ -27,10 +27,12 @@
                 tal:content="item/Title" />
           </h2>
         </div>
-          <p class="blog-entry-description"
+          <p class="lead blog-entry-description"
             tal:condition="item/Description"
             tal:content="item/Description" />
-
+          <div class="blog-bodytext"
+            tal:condition="item/text"
+            tal:content="structure item/text/output" />
         <a href="" class="read-more"
               tal:attributes="href item/getURL">
           <i class="icon-chevron-sign-right"></i>

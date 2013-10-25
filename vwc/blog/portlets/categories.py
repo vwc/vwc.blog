@@ -1,4 +1,5 @@
 import urllib2
+from Acquisition import aq_inner
 from zope.interface import implements
 
 from plone.portlets.interfaces import IPortletDataProvider
@@ -71,7 +72,7 @@ class Renderer(base.Renderer):
         assignment_context = find_portlet_assignment_context(self.data,
                                                              self.context)
         if assignment_context is None:
-            assignment_context = self.context
+            assignment_context = aq_inner(self.context)
         self.folder_url = assignment_context.absolute_url()
         sub = urllib2.quote(subject.encode('utf-8'))
         url = '%s/%s?category=%s' % (self.folder_url,
@@ -82,6 +83,8 @@ class Renderer(base.Renderer):
     def blog_url(self):
         assignment_context = find_portlet_assignment_context(self.data,
                                                              self.context)
+        if assignment_context is None:
+            assignment_context = aq_inner(self.context)
         return assignment_context.absolute_url()
 
     def count_entries(self, subject):
